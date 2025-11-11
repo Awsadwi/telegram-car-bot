@@ -304,7 +304,8 @@ def main():
     Main function to start the bot.
     """
     # Replace with your actual bot token from @BotFather
-    BOT_TOKEN = "8507823723:AAEKlHsU8Rt6D676Oll6PLxH5nZ-Io1-XDI"
+    import os
+    BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
     # Create application
     application = Application.builder().token(BOT_TOKEN).build()
